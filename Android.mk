@@ -38,6 +38,8 @@ LOCAL_RESOURCE_DIR = $(LOCAL_PATH)/res frameworks/support/v7/cardview/res
 
 LOCAL_AAPT_FLAGS := --auto-add-overlay --extra-packages android.support.v7.cardview
 
+LOCAL_PRIVATE_PLATFORM_APIS := true
+
 include $(BUILD_PACKAGE)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
